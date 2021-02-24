@@ -7,7 +7,7 @@ function App() {
   const [resultado, setResultado] = useState(0);
 
   const sumar = () =>{
-    setResultado(num1+ parseInt(num2));
+    setResultado(parseInt(num1) + parseInt(num2));
   }
 
   const restar = () =>{
