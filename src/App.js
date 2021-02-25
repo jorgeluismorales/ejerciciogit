@@ -18,7 +18,9 @@ function App() {
     setResultado(parseInt(num1) * parseInt(num2));
   }
 
-
+  const dividir = () =>{
+    setResultado(parseInt(num1) / parseInt(num2));
+  }
 
   return (
     <div className="App">
@@ -45,7 +47,7 @@ function App() {
        <button onClick={sumar}> sumar </button>
        <button onClick={restar}> restar </button>
        <button onClick={multiplicar}> multiplicar </button>
-
+       <button onClick={dividir}> dividir </button>
        <p className="textoresultado">{resultado}</p>
         
     </div>
