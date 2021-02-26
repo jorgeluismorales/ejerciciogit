@@ -7,7 +7,7 @@ function App() {
   const [resultado, setResultado] = useState(0);
 
   const sumar = () =>{
-    setResultado(parseInt(num1) + parseInt(num2));
+    setResultado(num1+ parseInt(num2));
   }
 
   const restar = () =>{
@@ -18,9 +18,7 @@ function App() {
     setResultado(parseInt(num1) * parseInt(num2));
   }
 
-  const dividir = () =>{
-    setResultado(parseInt(num1) / parseInt(num2));
-  }
+
 
   return (
     <div className="App">
@@ -32,6 +30,7 @@ function App() {
        placeholder="ingresa un numero"
        value={num1}
        onChange={e =>setNum1(e.target.value)}
+       className="inputfield"
        />
 
        <input 
@@ -47,7 +46,7 @@ function App() {
        <button onClick={sumar}> sumar </button>
        <button onClick={restar}> restar </button>
        <button onClick={multiplicar}> multiplicar </button>
-       <button onClick={dividir}> dividir </button>
+
        <p className="textoresultado">{resultado}</p>
         
     </div>
